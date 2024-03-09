@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepVue</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #549cc3;
+            color: #fff;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        a{
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004367;
+            color: white;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 20px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .logo {
+            max-width: 7%;
+            margin: 1%;
+            padding:0;
+            margin-left: 2%;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            background-color: #c5e2f3;
+            border-radius: 30px;
+            width:80%;
+            vertical-align: middle;
+        }
+
+        .content-text {
+            padding: 20px;
+            background-color: #004367;
+            height: 30%;
+            border-radius: 30px;
+            width: 70%;
+            vertical-align: middle;
+            margin: 1%;
+        }
+
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .content-image img {
+            width: 80%;
+            height: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        .offer-price {
+            font-size: 1.5em;
+            color: #9cd0ec; /* Orange color for emphasis */
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888; /* Gray color for the original price */
+        }
+        button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 20px; /* Adjust the value for more or less rounding */
+        background-color: #3498db; /* Button background color */
+        color: #ffffff; /* Button text color */
+        border: 2px solid #3498db; /* Button border color */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Button background color on hover */
+            color: #ffffff; /* Button text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="PrepVue_logo_new.png" alt="PrepVue Logo" class="logo">
+        <img src="PrepVue_text.png" alt="PrepVue Logo" style="width: 15%;">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+    <section class="container" style="background-color: #fff;">
+        <div class="content-image">
+            <img  src="stress_boy.png" alt="Image 1">
+        </div>
+        <div class="content-text" style="background-color: #ffffff;vertical-align: middle;">
+            <h2 style="color: #004367;font-size: 6vw;">Looking for an Interview Experience?</h2>
+        </div>
+    </section>
+    <div  style="background-color: #ffffff;
+    margin: 20px 0;
+    width: 80%;
+    border-radius: 30px;
+    vertical-align: middle;text-align: center;">
+            <h2 style="color: #004367;font-size: 6vw;text-align: center;vertical-align: middle;">Don't Worry, <br>PrepVue is Here!</h2>
+</div>
+    <section class="container">
+        <div class="content-image">
+            <img  src="interview.png" alt="Image 1">
+        </div>
+        <div class="content-text" id="about">
+            <h2 style="font-size: 2vw;">How it Helps</h2>
+            <p style="font-size: 1.3vw;">PrepVue boosts confidence levels by offering one-on-one online interview experiences. Engage in lessons and mock interviews for hands-on learning, providing valuable insights and building self-assurance. Gain personalized feedback and targeted strategies to further refine your interview skills. Elevate your readiness for real-world placement scenarios with PrepVue's unique approach.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content-text" >
+            <h2 style="font-size: 2vw;">Interview Mastery and Performance Insights</h2>
+            <p style="font-size: 1.3vw;">We redefine preparation by delivering an insightful analysis report focused on your interview prowess. Uncover your strengths and pinpoint areas for improvement through our personalized feedback system. Elevate your interview skills and track your progress with detailed performance insights, ensuring you stand out in every professional encounter.</p>
+        </div>
+        <div class="content-image">
+            <img src="upgrade.png" alt="Image 2">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content-image">
+            <img  src="students.png" alt="Image 1">
+        </div>
+        <div class="content-text" id="contact">
+            <h2 style="font-size: 2vw;">Exclusive Offer</h2>
+        <p style="font-size: 1.3vw;">Don't miss our exclusive, limited-time offer! Experience PrepVue at a special price, crafted just for you. </p>
+        <p class="offer-price" style="text-align: center;font-size: 1.3vw;"><span class="original-price">₹99</span> ₹50 only!</p>
+        <p style="font-size: 1.3vw;">Maximize your interview readiness with our exclusive offer! Follow us on Instagram and send a DM for session bookings and additional details. Elevate your professional growth today!</p>
+        <a href="https://www.instagram.com/prepvue/"><button>Instagram</button></a>
+        </div>
+    </section>
+    </center>
+    <!-- Repeat the pattern for other sections -->
+
+    
+    <p style="text-align: center;">&copy; 2024 PrepVue. All rights reserved.</p>
+
+</body>
+
+</html>
+
